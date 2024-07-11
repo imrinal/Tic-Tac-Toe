@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: auto; 
+    gap: 10px;
+}
+
+nav img{
+    height: 80px;
+}
+
+.headingtxt{
+    height: 60px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+th h1 {
+    font-size: 45px;
+    font-family: "Anton SC", sans-serif;
+    color: blanchedalmond;
+}
+
+th .status {
+    font-size: 30px;
+    font-family: "Baskervville SC", serif;
+    color: blanchedalmond;
+}
+
+.gif img {
+    height: 250px;
+    display: none; 
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px #f3b275c7;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border: 1.5px solid #FF7B02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgb(255, 208, 138);
+}
+
+.reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #FF7B02;
+    color: #070032;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: #ffb26a;
+}
